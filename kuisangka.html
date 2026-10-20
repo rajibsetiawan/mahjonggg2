@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Petualangan 123</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/kuisangka.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <div class="top-bar">
+    <a href="games.html" class="icon-btn">🎮</a>
+    <h1>Petualangan 123</h1>
+    <button class="icon-btn" id="btnSoal">🔊</button>
+  </div>
+
+  <p class="instruction">Tekan PLAY lalu pilih angka</p>
+
+  <!-- PLAY BUTTON -->
+  <button class="play-btn" id="btnPlay">▶️</button>
+
+  <!-- GAME -->
+  <table class="game-table">
+    <tr>
+      <td colspan="4" class="question-cell">
+        <img id="questionImage" src="buaah.png" alt="soal">
+      </td>
+    </tr>
+    <tr id="answerRow">
+    <td><button class="answer-btn"></button></td>
+    <td><button class="answer-btn"></button></td>
+    <td><button class="answer-btn"></button></td>
+    <td><button class="answer-btn"></button></td>
+    </tr>
+
+  </table>
+
+  <!-- POPUP BENAR -->
+  <div class="popup" id="popupBenar">
+    <div class="popup-box">
+      <h2>🎉 KAMU BENAR!!! 🎉</h2>
+      <button class="answer-btn" id="btnNext">Soal Selanjutnya >>></button>
+    </div>
+  </div>
+
+  <!-- AUDIO -->
+  <audio id="soundSoal"></audio>
+  <audio id="soundBenar" src="sounds/benar.mp3"></audio>
+  <audio id="soundSalah" src="sounds/salah.mp3"></audio>
+
+  <script src="js/kuisangka.js"></script>
+</body>
+</html>

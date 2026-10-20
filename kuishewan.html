@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Kuis Hewan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/kuishewan.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="top-bar">
+    <a href="games.html" class="icon-btn">🎮</a>
+    <h1>Kuis Hewan</h1>
+    <button class="icon-btn" id="btnSoal">🔊</button>
+  </div>
+
+  <div>
+    <p class="instruction" id="instruction">Tekan Lalu Dengarkan Suara Hewan Ini!</p>
+
+  </div>
+  <!-- PLAY -->
+  <button class="play-btn" id="btnPlay">▶️</button>
+
+  <!-- PILIHAN -->
+  <div class="answers" id="answerBox"></div>
+
+  <!-- POPUP -->
+  <div class="popup" id="popupBenar">
+    <div class="popup-box">
+      <h2>🎉 KAMU BENAR!!! 🎉</h2>
+      <button class="next-btn" id="btnNext">Hewan Selanjutnya ▶️</button>
+    </div>
+  </div>
+
+  <!-- AUDIO -->
+  <audio id="soundSoal"></audio>
+  <audio id="soundBenar" src="sounds/benar.mp3"></audio>
+  <audio id="soundSalah" src="sounds/salah.mp3"></audio>
+
+  <script src="js/kuishewan.js"></script>
+</body>
+</html>
